@@ -1,0 +1,94 @@
+/* Index Page CSS */
+
+body{
+  background-color: #b9a39e !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #5c4747;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  transition: all .5s ease;
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: transparent;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  color: #001F3F;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+.wave{
+  margin-top: -10%;
+}
+
+.mmt{
+  margin-top: -3% !important;
+}
+
+.new{
+  color: #001F3F;
+  font-size: 500% !important;
+  margin-top: -3%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.overlay-image {
+  width: 70%; /* Smaller size for the overlay image */
+  height: auto;
+  position: absolute;
+  top: 80%; /* Position overlay image at the center */
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg); /* Center and tilt the image */
+}
+
+
+/* Footer Section */
+#footer {
+  color: #001F3F;
+  background-color: #5c4747;
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* About Us Page */
+.aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: cursive;
+  overflow-x:hidden;
+}
