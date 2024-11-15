@@ -51,7 +51,7 @@ body{
 }
 
 .overlay-image {
-  width: 70%; /* Smaller size for the overlay image */
+  width: 65%; /* Smaller size for the overlay image */
   height: auto;
   position: absolute;
   top: 80%; /* Position overlay image at the center */
