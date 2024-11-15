@@ -27,12 +27,18 @@
         <p class="text-center new">NEW!</p>
         <div class="row mmt">
             <div class="row align-items-center">
-              <img class="col-2" src="Images\Red.png"/>
-              <p class="pt-4 col-2 fst-italic fs-5 text-right">Watermelon jelly <br><br> 500ml 320 calories <br><br> Watermelon slush with grass jelly, tapioca, and watermelon chunks.</p>
-              <img class="col-2" src="Images\idkwhatcolor.png"/>
-              <p class="pt-4 col-2 fst-italic fs-5 text-right">Sunset <br><br> 500ml 380 calories <br><br> Lemon slush, orange slush, cherry slush and cheese foam on the bottom. Comes with tapioca.</p>
-              <img class="col-2" src="Images\Brownblue.png"/>
-              <p class="pt-4 col-2 fst-italic fs-5 text-right">Wintertime <br><br> 500ml 400 calories <br><br> Cheese foam on top with a chocolate slush finished with blue jelly and tapioca.</p>
+                <div class="image-container col" data-hover-text="Watermelon jelly <br><br> 500ml 320 calories <br><br> Watermelon slush with grass jelly, tapioca, and watermelon chunks.">
+                  <img class="wid4" src="Images/Red.png" alt="Tea 1">
+                  <div class="hover-text"></div>
+                </div>
+              <div class="image-container col" data-hover-text="Sunset <br><br> 500ml 380 calories <br><br> Lemon slush, orange slush, cherry slush and cheese foam on the bottom. Comes with tapioca.">
+                <img src="Images/Idkwhatcolor.png" alt="Tea 2">
+                <div class="hover-text"></div>
+              </div>
+              <div class="image-container col" data-hover-text="Wintertime <br><br> 500ml 400 calories <br><br> Cheese foam on top with a chocolate slush finished with blue jelly and tapioca.">
+                <img src="Images/Brownblue.png" alt="Tea 3">
+                <div class="hover-text"></div>
+              </div>
             </div>
         </div>
     </div>
@@ -46,5 +52,25 @@
         </div>
       </div>
     </section>
+    <script>
+      // JavaScript to add hover functionality
+      document.querySelectorAll('.image-container').forEach(container => {
+        const hoverTextElement = container.querySelector('.hover-text');
+        const hoverText = container.getAttribute('data-hover-text');
+
+        // Set the hover text
+        hoverTextElement.innerHTML = hoverText;
+
+        // Show hover text on mouseover
+        container.addEventListener('mouseover', () => {
+          hoverTextElement.style.display = 'block';
+        });
+
+        // Hide hover text on mouseout
+        container.addEventListener('mouseout', () => {
+          hoverTextElement.style.display = 'none';
+        });
+      });
+    </script>
   </body>
 </html>

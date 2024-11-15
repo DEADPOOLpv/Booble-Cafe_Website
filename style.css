@@ -40,7 +40,7 @@ body{
 }
 
 .mmt{
-  margin-top: -3% !important;
+  margin-top: -2% !important;
 }
 
 .new{
@@ -59,6 +59,36 @@ body{
   transform: translate(-50%, -50%) rotate(30deg); /* Center and tilt the image */
 }
 
+/* Hover Text Image */
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.wid4{
+  width: 420px !important;
+}
+
+.image-container img {
+  width: 500px;
+  height: auto;
+  display: block;
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-style: italic;
+  display: none;
+}
 
 /* Footer Section */
 #footer {
